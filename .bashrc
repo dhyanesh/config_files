@@ -30,3 +30,27 @@ set -o vi
 shopt -s cdspell
 
 export PATH=$PATH:$HOME/bin:$HOME/dev/android/sdk_root/tools
+
+case $TERM in
+    xterm*)
+        TITLEBAR='\[\033]0;\u@\h:\w\007\]'
+        ;;
+    screen)
+        TITLEBAR='\[\033]0;\u@\h:\w\007\]\[\033k\w\033\\\]'
+        ;;
+    *)
+        TITLEBAR=''
+        ;;
+esac
+
+function get_prompt {
+  typeset branch=$(git symbolic-ref HEAD | cut -d '/' -f3)
+  typeset git=$(printf '%s ' "$branch")
+  printf $'%s[\u@\h %s\W]$ ' "$TITLEBAR" "$git"
+}
+
+function set_prompt {
+  PS1=$(get_prompt)
+}
+
+PROMPT_COMMAND=set_prompt
