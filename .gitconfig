@@ -1,0 +1,9 @@
+[user]
+	name = Dhyanesh Damania
+	email = d2githubfake@fake.com
+[credential]
+	helper = osxkeychain
+[alias]
+  co = checkout
+  list = diff --name-only
+  cmall = commit --all --message='No significant message.'
