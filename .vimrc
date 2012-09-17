@@ -27,4 +27,4 @@ nmap ,b :e %:h/BUILD<CR>
 match Search /\ \n/
 2match Search /\%<85v.\%>81v/
 set t_Co=16
-:colorscheme Tomorrow-Night-Eighties
+:colorscheme Tomorrow-Night
