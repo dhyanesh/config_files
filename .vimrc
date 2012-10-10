@@ -1,6 +1,7 @@
 set ai nocindent nosmartindent expandtab smarttab shiftwidth=2
 set nu showmatch incsearch hlsearch showcmd tabstop=2 wildmode=list:longest
 set smartcase
+set mouse=a
 
 map <TAB> :bn <CR>
 map <S-TAB> :bp <CR>
