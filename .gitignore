@@ -1,5 +1,6 @@
 # Ignore files starting with ".". Already tracked files are not affected.
 .*
+sdrecovery
 Desktop
 Downloads
 Movies
