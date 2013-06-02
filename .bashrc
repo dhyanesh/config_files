@@ -29,7 +29,7 @@ alias gh='cd /home/dhyanesh/git/google3/'
 set -o vi
 shopt -s cdspell
 
-export PATH=$PATH:$HOME/bin:$HOME/dev/android-sdk-macosx/tools:$HOME/dev/android-ndk-r8b
+export PATH=$HOME/bin:$HOME/dev/android-sdk-macosx/tools:$HOME/dev/android-ndk-r8b:$PATH
 
 case $TERM in
     xterm*)
