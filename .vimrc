@@ -1,3 +1,22 @@
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle
+" required!
+Plugin 'gmarik/Vundle.vim'
+
+" My Bundles here:
+"
+" original repos on github
+Plugin 'Valloric/YouCompleteMe'
+" Bundle 'scrooloose/syntastic'
+
+call vundle#end()            " required
+filetype plugin indent on     " required!
+
 set ai nocindent nosmartindent expandtab smarttab shiftwidth=2
 set nu showmatch incsearch hlsearch showcmd tabstop=2 wildmode=list:longest
 set smartcase
@@ -30,23 +49,8 @@ match Search /\ \n/
 set t_Co=16
 :colorscheme Tomorrow-Night
 
-set nocompatible               " be iMproved
-filetype off                   " required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
-" My Bundles here:
-"
-" original repos on github
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/syntastic'
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:syntastic_always_populate_loc_list = 1
-
-filetype plugin indent on     " required!
+let g:ycm_server_keep_logfiles = 1
+let g:ycm_server_log_level = 'debug'
+" let g:ycm_confirm_extra_conf = 0
+" let g:ycm_autoclose_preview_window_after_insertion = 1
+" let g:syntastic_always_populate_loc_list = 1

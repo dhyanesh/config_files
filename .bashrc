@@ -44,7 +44,7 @@ case $TERM in
 esac
 
 function get_prompt {
-  typeset branch=$(git symbolic-ref HEAD | cut -d '/' -f3)
+  typeset branch=$(git symbolic-ref HEAD 2>/dev/null | cut -d '/' -f3)
   typeset git=$(printf '%s ' "$branch")
   printf $'%s[\u@\h %s\W]$ ' "$TITLEBAR" "$git"
 }
