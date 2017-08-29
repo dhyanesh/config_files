@@ -1,12 +1,18 @@
 # Ignore files starting with ".". Already tracked files are not affected.
 .*
-sdrecovery
+Applications
 Desktop
-Downloads
-Movies
-Pictures
-dev
 Documents
+Downloads
 Library
+Lightroom
+MittalDocuments
+Movies
 Music
+Pictures
 Public
+RAW
+StudioProjects
+bin
+dev
+sdrecovery
