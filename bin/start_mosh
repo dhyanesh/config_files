@@ -1,3 +1,3 @@
 #!/bin/sh
 
-mosh -p 1240$1 juggernaut.blr --ssh="ssh -C" -- /usr/local/google/home/dhyanesh/bin/myscreen
+mosh juggernaut.blr.corp.google.com --ssh="ssh -C" -- /usr/local/google/home/dhyanesh/bin/myscreen
