@@ -6,13 +6,12 @@ call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
 "
 " original repos on github
 Plugin 'Valloric/YouCompleteMe'
-" Bundle 'scrooloose/syntastic'
 
 call vundle#end()            " required
 filetype plugin indent on     " required!
