@@ -7,6 +7,7 @@ call vundle#begin()
 " let Vundle manage Vundle
 " required!
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
 
 " My Bundles here:
 "
@@ -20,6 +21,7 @@ set ai nocindent nosmartindent expandtab smarttab shiftwidth=2
 set nu showmatch incsearch hlsearch showcmd tabstop=2 wildmode=list:longest
 set smartcase
 set mouse=a
+set backspace=indent,eol,start
 
 map <TAB> :bn <CR>
 map <S-TAB> :bp <CR>
@@ -46,7 +48,7 @@ nmap ,b :e %:h/BUILD<CR>
 match Search /\ \n/
 2match Search /\%<85v.\%>81v/
 set t_Co=16
-:colorscheme Tomorrow-Night
+:colorscheme solarized
 
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
