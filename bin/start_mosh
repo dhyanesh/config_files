@@ -1,17 +1,17 @@
 #!/bin/sh
 
 export LC_CTYPE=en_US.UTF-8
-if [[ $2 == "t" ]]
+if [[ $2 == "s" ]]
 then
-CMD=/usr/local/google/home/dhyanesh/bin/mytmux
-else
 CMD=/usr/local/google/home/dhyanesh/bin/myscreen
+else
+CMD=/usr/local/google/home/dhyanesh/bin/mytmux
 fi
-if [[ $1 == "p" ]]
+if [[ $1 == "g" ]]
 then
-  $HOME/bin/run_gcert p
-  gmosh pangolier.c.googlers.com --ssh="ssh -C" -- $CMD
+  $HOME/bin/run_gcert g
+  gmosh juggernaut.blr.corp.google.com --ssh="ssh -C" -- $CMD
 else
   $HOME/bin/run_gcert
-  gmosh juggernaut.blr.corp.google.com --ssh="ssh -C" -- $CMD
+  gmosh pangolier.c.googlers.com --ssh="ssh -C" -- $CMD
 fi

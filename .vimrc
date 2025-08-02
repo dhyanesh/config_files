@@ -13,6 +13,7 @@ Plugin 'altercation/vim-colors-solarized'
 "
 " original repos on github
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'yukimemi/futago'
 
 call vundle#end()            " required
 filetype plugin indent on     " required!

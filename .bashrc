@@ -54,3 +54,6 @@ function set_prompt {
 }
 
 PROMPT_COMMAND=set_prompt
+
+# Created by `pipx` on 2024-12-23 09:37:03
+export PATH="$PATH:/Users/dhyanesh/.local/bin"
